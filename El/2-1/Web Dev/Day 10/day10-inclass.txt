@@ -1,0 +1,53 @@
+console.log("hello");
+VM193:1 hello
+undefined
+var a1=10;console.log(a);
+VM255:1 Uncaught ReferenceError: a is not defined
+    at <anonymous>:1:23
+(anonymous) @ VM255:1Understand this error
+var a1=10;console.log(a1);
+VM265:1 10
+undefined
+var a2=20; a2;
+20
+var a3=10;var a4=20; a3+a4;
+30
+
+-------------
+var a=10; var a=20;console.log(a);
+VM475:1 20
+undefined
+let a5=20; let a5=30; a5;
+VM532:1 Uncaught SyntaxError: Identifier 'a5' has already been declaredUnderstand this error
+let a6=10; console.log(a6);
+VM605:1 10
+undefined
+const c1; 
+VM638:1 Uncaught SyntaxError: Missing initializer in const declarationUnderstand this error
+const c1=10;
+
+----------------
+
+let num1=15;let num2=20;let str="check"; num1+num2+str;
+'35check'
+num1+check+num2;
+'15[object SVGGElement]20'
+console.log(num1+check+num2);
+VM886:1 15[object SVGGElement]20
+undefined
+let num2=15;let num3=20;let str1="check"; str1+num2+num3; 
+'check1520'
+
+
+--------------
+let  a7=10; if(a7==10) { console.log("true")}
+VM1077:1 true
+undefined
+let  a8='10'; if(a8==10) { console.log("true")}
+VM1091:1 true
+undefined
+let  a8='10'; if(a8===10) { console.log("true")}
+undefined
+
+
+-------------------

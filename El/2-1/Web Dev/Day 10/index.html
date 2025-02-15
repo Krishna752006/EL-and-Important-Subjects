@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        function addListItem()
+        {
+            let item=document.createElement("li");
+            let a1=document.getElementById("task").value;
+            item.textContent=a1;
+            let myLilist=document.getElementById("taskList");
+            myLilist.appendChild(item);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>Task</p>
+        <ul id="taskList">
+        </ul>
+    </div>
+    <input id="task" type="text">
+        <button
+        name=""
+        id=""
+        class="btn btn-primary"
+        type="button" onclick="addListItem()">ADD TASK</button>
+
+</body>
+</html>

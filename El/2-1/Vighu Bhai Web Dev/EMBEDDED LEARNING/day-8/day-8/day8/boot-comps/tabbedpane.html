@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <h1> Tabbed pane!</h1>
+<!-- Nav tabs -->
+<ul class="nav nav-pills" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+        >
+            Home
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile"
+            type="button"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+        >
+            Profile
+        </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link"
+            id="messages-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#messages"
+            type="button"
+            role="tab"
+            aria-controls="messages"
+            aria-selected="false"
+        >
+            Messages
+        </button>
+    </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div
+        class="tab-pane active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+    >
+         home 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat nesciunt ducimus omnis est nulla minus totam impedit quasi harum voluptatibus dolore magni ipsam consectetur maiores officiis error, aspernatur debitis!
+    </div>
+    <div
+        class="tab-pane"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+    >
+         profile 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facilis, laudantium ipsa commodi nam officiis odit illum assumenda, dolores maxime consectetur ea quo corporis labore recusandae blanditiis reprehenderit! Repellat, obcaecati?
+    </div>
+    <div
+        class="tab-pane"
+        id="messages"
+        role="tabpanel"
+        aria-labelledby="messages-tab"
+    >
+         messages
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, aliquam. Ipsam est nihil itaque non consectetur expedita velit nulla earum quo tempora nostrum iste, necessitatibus officia aliquid, temporibus voluptatum eum. 
+    </div>
+</div>
+
+
+
+</body>
+</html>

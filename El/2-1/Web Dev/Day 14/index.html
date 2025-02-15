@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to my Weather</h1>
+    <p>City</p>
+    <input id="task" type="text">
+    <button
+    class="btn btn-primary"
+    type="button" 
+    onclick="addListItem()" id="mybutton">Get Weather</button>
+    <br><br>
+    <div id="weatherDisplay"></div>
+
+    <script>
+        async function addListItem() {
+            var city = document.getElementById('task').value;            
+            try {
+                let response = await fetch('http://10.10.6.48:3000/weather/${city}' );
+                let data = await response.json();
+                displayData(data); 
+            } catch (error) {
+                console.log("An error occurred:", error.message);
+            }
+        }
+        function displayData(data) {
+            let displayDiv = document.getElementById('weatherDisplay');
+            displayDiv.innerHTML = `
+                <h2>Weather in city --${data.name} is Clear</h2>
+                <p>Current temp is ${data.main.temp}</p>
+                <p>Max Temp is ${data.main.temp_max}</p>
+                <p>Min Temp is ${data.main.temp_min}</p>
+                <p>WindSpeed: ${data.wind.speed}</p>`;
+        }
+    </script>
+</body>
+</html>

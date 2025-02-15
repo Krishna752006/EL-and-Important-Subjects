@@ -1,0 +1,30 @@
+1. why do we use Async weight?
+can we use weight without Async?
+
+2. Try catch used for users/developers?
+
+2-tier architechre...
+
+async and away
+
+to prevent business logic
+
+3. Why do we need to create our own server?
+
+port vs post ?
+
+3 tier architecture
+
+front end part is the middle ware
+middle ware, interface, hedge inference
+
+mogodb is coastly?
+
+production environment
+
+What is DL used for?
+
+CPU/GPU/GRU/CUDA
+computer vision
+Transfer Learning
+pytorch module?

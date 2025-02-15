@@ -1,0 +1,31 @@
+        h1{
+            background-color:blue ;
+        }
+
+.myborder1{
+    border-width: 4px ;
+    border-color: chocolate;
+    border-style: dashed;
+} 
+.myborder2{
+    border: 4px dotted deeppink;
+}
+
+.mybrdrmargin{
+    border: 4px double rgb(14, 30, 180);
+    margin: 4px;
+    border-radius: 8px;
+}
+.mybrdrmarpdg{
+    border: 4px dashed rgb(14, 30, 180);
+    margin: 4px;
+    padding: 4px;
+}
+
+.mybrdrmarpdg{
+    
+    border: 4px dotted rgb(14, 30, 180);
+    margin: 4px;
+    padding: 4px;
+   
+}
